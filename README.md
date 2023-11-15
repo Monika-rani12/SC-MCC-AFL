@@ -6,7 +6,8 @@ This experimental data is provided for the results shown in the paper titled
 
 #========================================================================
 
-We have provided "SC-MCC-AFL-Results.zip" file which contains all the results mentioned in the paper.
+All the 54 Result folders are uploaded in the below link:  
+https://zenodo.org/doi/10.5281/zenodo.8116562  
 
 #=========================================================================
 
@@ -143,9 +144,6 @@ i. The file "Time-mcdc_Program-MODE1.txt” of Mode1 folder contains the Executi
 j. The file "Time-mcdc_Program-MODE2.txt”  of Mode2 folder contains the Execution time information w.r.t., SC-MCC criterion.  
 
 #========================================================================
-
-All the 54 Result folders are uploaded in the below link:  
-https://zenodo.org/doi/10.5281/zenodo.8116562  
 
 #======================================================================
 
