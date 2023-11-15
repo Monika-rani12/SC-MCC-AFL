@@ -1,0 +1,8 @@
+****************Time Analysis SC-MCC Mode2 Report - Start**************************
+***Total SC-MCC Meta Program generator runtime in seconds 3.111979288
+Total SC-MCC Meta Program generator runtime: 0:00:00:3.1120
+***Total SC-MCC TCG runtime in seconds 68.148914090
+Total SC-MCC TCG runtime: 0:00:01:8.1489
+***Total MA runtime in seconds 1.894262130
+Total MA runtime: 0:00:00:1.8943
+****************Time Mutation Analysis Mode2 Report - End**************************

@@ -1,0 +1,8 @@
+****************Time Analysis MCDC Mode1 Report - Start**************************
+***Total MCDC Meta Program generator runtime in seconds 1.432001428
+Total MCDC Meta Program generator runtime: 0:00:00:1.4320
+***Total MCDC TCG runtime in seconds 67.967125768
+Total MCDC TCG runtime: 0:00:01:7.9671
+***Total MA runtime in seconds 1.953935089
+Total MA runtime: 0:00:00:1.9539
+****************Time Mutation Analysis MODE1 Report - End**************************

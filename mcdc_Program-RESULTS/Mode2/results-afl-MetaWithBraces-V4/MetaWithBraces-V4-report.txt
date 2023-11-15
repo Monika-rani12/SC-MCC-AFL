@@ -1,0 +1,3 @@
+******Final Result Report from AFL******
+Total number Injected Errors =:10
+Total number Detected Errors =:10

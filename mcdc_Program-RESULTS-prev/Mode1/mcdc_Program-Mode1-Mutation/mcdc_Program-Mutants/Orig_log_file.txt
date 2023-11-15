@@ -1,0 +1,294 @@
+PNF_Line_11_Pred_1_Cond_PNF_Mutant1
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (!(((X > 50) && (Y == 100)) || (Z < 90))) {
+
+
+CNF_Line_11_Pred_1_Cond_1_Mutant2
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((!(X > 50 )) && (Y == 100)) || (Z < 90)) {
+
+
+CNF_Line_11_Pred_1_Cond_2_Mutant3
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (!( Y == 100 ))) || (Z < 90)) {
+
+
+CNF_Line_11_Pred_1_Cond_3_Mutant4
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y == 100)) || (!( Z < 90))) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant5
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y != 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant6
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y < 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant7
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y > 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant8
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y <= 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant9
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y >= 100)) || (Z < 90)) {
+
+
+LOF_Line_11_Pred_1_Cond_NOC_Mutant10
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y == 100)) && (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant11
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y == 100)) || (Z != 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant12
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y == 100)) || (Z > 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant13
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y == 100)) || (Z <= 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant14
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y == 100)) || (Z >= 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_0_Mutant15
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) && (Y == 100)) || (Z == 90)) {
+
+
+LOF_Line_11_Pred_1_Cond_NOC_Mutant16
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X > 50) || (Y == 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_9_Mutant17
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X != 50) && (Y == 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_9_Mutant18
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X < 50) && (Y == 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_9_Mutant19
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X <= 50) && (Y == 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_10_Mutant20
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X >= 50) && (Y == 100)) || (Z < 90)) {
+
+
+ROF_Line_11_Pred_1_Cond_9_Mutant21
+
+==> @ Line: 11
+Original Line  : if (((X > 50) && (Y == 100)) || (Z < 90)) {
+After Mutation : if (((X == 50) && (Y == 100)) || (Z < 90)) {
+
+
+PNF_Line_15_Pred_2_Cond_PNF_Mutant22
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (!(((X > 20) && (Y == 70)) || (Z < 0))) {
+
+
+CNF_Line_15_Pred_2_Cond_3_Mutant23
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((!(X > 20 )) && (Y == 70)) || (Z < 0)) {
+
+
+CNF_Line_15_Pred_2_Cond_4_Mutant24
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (!( Y == 70 ))) || (Z < 0)) {
+
+
+CNF_Line_15_Pred_2_Cond_5_Mutant25
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y == 70)) || (!( Z < 0))) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant26
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y != 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant27
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y < 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant28
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y > 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant29
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y <= 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant30
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y >= 70)) || (Z < 0)) {
+
+
+LOF_Line_15_Pred_2_Cond_NOC_Mutant31
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y == 70)) && (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant32
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y == 70)) || (Z != 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant33
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y == 70)) || (Z > 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant34
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y == 70)) || (Z <= 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant35
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y == 70)) || (Z >= 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_2_Mutant36
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) && (Y == 70)) || (Z == 0)) {
+
+
+LOF_Line_15_Pred_2_Cond_NOC_Mutant37
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X > 20) || (Y == 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_11_Mutant38
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X != 20) && (Y == 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_11_Mutant39
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X < 20) && (Y == 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_11_Mutant40
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X <= 20) && (Y == 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_12_Mutant41
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X >= 20) && (Y == 70)) || (Z < 0)) {
+
+
+ROF_Line_15_Pred_2_Cond_11_Mutant42
+
+==> @ Line: 15
+Original Line  : if (((X > 20) && (Y == 70)) || (Z < 0)) {
+After Mutation : if (((X == 20) && (Y == 70)) || (Z < 0)) {
+
+

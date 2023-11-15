@@ -1,0 +1,6 @@
+============Mutation Score Report============
+Total number of Alive Mutants =: 31
+Total number of Killed Mutants =: 11
+Total number of Mutants =: 42
+Mutation Score =: 26%
+============Report-Finish====================

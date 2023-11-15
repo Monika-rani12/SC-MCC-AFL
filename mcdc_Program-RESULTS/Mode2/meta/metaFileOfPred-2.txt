@@ -1,0 +1,5 @@
+if(usymb1){assert(!(!(X>20)&&Y==70||!(Z<0)));}
+if(usymb2){assert(!(!(X>20)&&Y==70||Z<0));}
+if(usymb3){assert(!(X>20&&!(Y==70)||!(Z<0)));}
+if(usymb4){assert(!(X>20&&!(Y==70)||Z<0));}
+if(usymb5){assert(!(X>20&&Y==70||Z<0));}

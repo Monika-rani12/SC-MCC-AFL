@@ -1,0 +1,463 @@
+crash triage utility for afl-fuzz by <lcamtuf@google.com>
+
+
++++ ID 000000, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 373] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000001, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 388] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000002, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 402] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000003, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 416] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000004, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 430] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000005, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:18: main: Assertion `(!(!(Z<90)&&X>50&&!(Y==100)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556a79 "(!(!(Z<90)&&X>50&&!(Y==100)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=18, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556a79 "(!(!(Z<90)&&X>50&&!(Y==100)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=18, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x000055555555644f in main () at MetaWithBraces-V4.c:18
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556a79	93824992242297
+r14            0x12	18
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 444] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000006, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 458] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000007, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 472] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000008, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:26: main: Assertion `(!(!(Z<0)&&X>20&&!(Y==70)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=26, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556b01 "(!(!(Z<0)&&X>20&&!(Y==70)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=26, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x0000555555556347 in main () at MetaWithBraces-V4.c:26
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556b01	93824992242433
+r14            0x1a	26
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 486] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+
++++ ID 000009, SIGNAL 06 +++
+
+MetaWithBraces-V4: MetaWithBraces-V4.c:18: main: Assertion `(!(!(Z<90)&&X>50&&!(Y==100)))' failed.
+
+Program received signal SIGABRT, Aborted.
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff7a227f1 in __GI_abort () at abort.c:79
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556a79 "(!(!(Z<90)&&X>50&&!(Y==100)))", file=file@entry=0x555555556a47 "MetaWithBraces-V4.c", line=line@entry=18, function=function@entry=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:92
+#3  0x00007ffff7a12472 in __GI___assert_fail (assertion=0x555555556a79 "(!(!(Z<90)&&X>50&&!(Y==100)))", file=0x555555556a47 "MetaWithBraces-V4.c", line=18, function=0x555555556b68 <__PRETTY_FUNCTION__.3520> "main") at assert.c:101
+#4  0x000055555555644f in main () at MetaWithBraces-V4.c:18
+Dump of assembler code from 0x7ffff7a20e87 to 0x7ffff7a20e97:
+=> 0x00007ffff7a20e87 <__GI_raise+199>:	mov    0x108(%rsp),%rcx
+   0x00007ffff7a20e8f <__GI_raise+207>:	xor    %fs:0x28,%rcx
+End of assembler dump.
+rax            0x0	0
+rbx            0x0	0
+rcx            0x7ffff7a20e87	140737347980935
+rdx            0x0	0
+rsi            0x7fffffffdba0	140737488346016
+rdi            0x2	2
+rbp            0x7ffff7b996c0	0x7ffff7b996c0
+rsp            0x7fffffffdba0	0x7fffffffdba0
+r8             0x0	0
+r9             0x7fffffffdba0	140737488346016
+r10            0x8	8
+r11            0x246	582
+r12            0x555555556a47	93824992242247
+r13            0x555555556a79	93824992242297
+r14            0x12	18
+r15            0x0	0
+rip            0x7ffff7a20e87	0x7ffff7a20e87 <__GI_raise+199>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+A debugging session is active.
+
+	Inferior 1 [process 500] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]
+

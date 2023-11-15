@@ -1,0 +1,4 @@
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556c0c "!(X>50&&!(Y==100)&&Z<90)", file=file@entry=0x555555556ba7 "MetaWithBraces-V4.c", line=line@entry=22, function=function@entry=0x555555556ce2 <__PRETTY_FUNCTION__.3521> "main") at assert.c:92
+#2  0x00007ffff7a123fa in __assert_fail_base (fmt=0x7ffff7b996c0 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=assertion@entry=0x555555556c84 "!(X>20&&!(Y==70)&&!(Z<0))", file=file@entry=0x555555556ba7 "MetaWithBraces-V4.c", line=line@entry=32, function=function@entry=0x555555556ce2 <__PRETTY_FUNCTION__.3521> "main") at assert.c:92
+MetaWithBraces-V4: MetaWithBraces-V4.c:22: main: Assertion `!(X>50&&!(Y==100)&&Z<90)' failed.
+MetaWithBraces-V4: MetaWithBraces-V4.c:32: main: Assertion `!(X>20&&!(Y==70)&&!(Z<0))' failed.

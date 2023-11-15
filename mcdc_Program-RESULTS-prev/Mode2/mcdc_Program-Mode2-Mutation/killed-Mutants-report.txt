@@ -1,0 +1,11 @@
+mcdc_Program-ReachedMutants/CNF_Line_11_Pred_1_Cond_3_Mutant4.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/CNF_Line_15_Pred_2_Cond_5_Mutant25.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/LOF_Line_11_Pred_1_Cond_NOC_Mutant10.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/PNF_Line_11_Pred_1_Cond_PNF_Mutant1.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/PNF_Line_15_Pred_2_Cond_PNF_Mutant22.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/ROF_Line_11_Pred_1_Cond_0_Mutant12.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/ROF_Line_11_Pred_1_Cond_0_Mutant14.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/ROF_Line_11_Pred_1_Cond_0_Mutant15.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/ROF_Line_15_Pred_2_Cond_2_Mutant32.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/ROF_Line_15_Pred_2_Cond_2_Mutant33.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt
+mcdc_Program-ReachedMutants/ROF_Line_15_Pred_2_Cond_2_Mutant35.c killed due to ../mcdc_Program-Mode2-TC/Ct1.txt

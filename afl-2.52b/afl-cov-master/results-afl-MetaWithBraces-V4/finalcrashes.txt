@@ -1,0 +1,5 @@
+MetaWithBraces-V4: MetaWithBraces-V4.c:1897: calculate_output: Assertion `(!(a49==8&&a49==8&&a105==33))' failed.
+MetaWithBraces-V4: MetaWithBraces-V4.c:1970: calculate_output: Assertion `(!(cf==1&&a121==32))' failed.
+MetaWithBraces-V4: MetaWithBraces-V4.c:2073: main: Assertion `(!(symb!=10&&symb!=6&&symb!=1&&symb!=8&&symb!=2&&symb!=5&&symb!=7&&symb!=9&&symb!=4&&symb!=3))' failed.
+MetaWithBraces-V4: MetaWithBraces-V4.c:251: calculate_outputm2: Assertion `(!(!(337<a16)&&cf==1&&a49==8&&a105==33&&a105==33))' failed.
+MetaWithBraces-V4: MetaWithBraces-V4.c:827: calculate_outputm7: Assertion `(!(a105==34&&a105==34&&a105==34))' failed.

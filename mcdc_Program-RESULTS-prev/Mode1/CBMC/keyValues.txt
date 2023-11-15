@@ -1,0 +1,4 @@
+if (((X > 50) && (Y == 100)) || (Z < 90)) {
+if(usymb){assert((!(!(Z<90)&&!(X>50)&&Y==100)));}; if(usymb){assert((!(!(Z<90)&&X>50&&!(Y==100))));}; if(usymb){assert((!(!(Z<90)&&X>50&&Y==100)));}; if(usymb){assert((!(Z<90&&!(X>50)&&Y==100)));};
+if (((X > 20) && (Y == 70)) || (Z < 0)) {
+if(usymb){assert((!(!(Z<0)&&!(X>20)&&Y==70)));}; if(usymb){assert((!(!(Z<0)&&X>20&&!(Y==70))));}; if(usymb){assert((!(!(Z<0)&&X>20&&Y==70)));}; if(usymb){assert((!(Z<0&&!(X>20)&&Y==70)));};
